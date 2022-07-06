@@ -356,9 +356,9 @@ a.navicon {
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-	body {
+	/* body {
 		background-color: red;
-	}
+	} */
 	.navdesktop {
 		display: none;
 	}
@@ -383,9 +383,9 @@ a.navicon {
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-	body {
+	/* body {
 		background-color: blue;
-	}
+	} */
 	.navdesktop {
 		display: none;
 	}
@@ -409,9 +409,9 @@ a.navicon {
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-	body {
+	/* body {
 		background-color: green;
-	}
+	} */
 	article.parent {
 		display:block;
 	}
