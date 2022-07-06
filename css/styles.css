@@ -405,6 +405,10 @@ a.navicon {
 		"TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2"
 		"Price Price Price CSC CSC CSC Be-There Be-There Be-There";
 	}
+	.Wrestling-Prediction-League { 
+		text-align: center;
+	}
+
 }
 
 /********** Extra small devices only **********/
@@ -417,5 +421,24 @@ a.navicon {
 	}
 	.navdesktop {
 		display: none;
+	}
+	.container { 
+		grid-template-areas:
+		"WPL WPL WPL WPL WPL WPL WPL WPL WPL"
+		"Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League"
+		"Date Date Date Date Date Date Date Date Date"
+		"Decoration-1 Decoration-1 WPL-World-Champion WPL-World-Champion WPL-World-Champion WPL-World-Champion WPL-World-Champion Decoration-2 Decoration-2"
+		"World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name"
+		"Decoration-3 Decoration-3 Tag-Team-Champions Tag-Team-Champions Tag-Team-Champions Tag-Team-Champions Tag-Team-Champions Decoration-4 Decoration-4"
+		"Decoration-5 Decoration-5 Tag-Team-Name Tag-Team-Name Tag-Team-Name Tag-Team-Name Tag-Team-Name Decoration-6 Decoration-6"
+		"Tag-Team-Teammate-1 Tag-Team-Teammate-1 Tag-Team-Teammate-1 Tag-Team-Teammate-1 AND Tag-Team-Teammate-2 Tag-Team-Teammate-2 Tag-Team-Teammate-2 Tag-Team-Teammate-2"
+		"TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider"
+		"Decoration-7 Decoration-7 Main-Event-Champion Main-Event-Champion Main-Event-Champion Main-Event-Champion Main-Event-Champion Decoration-8 Decoration-8"
+		"Decoration-9 Decoration-9 Main-Event-Name Main-Event-Name Main-Event-Name Main-Event-Name Main-Event-Name Decoration-10 Decoration-10"
+		"TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2"
+		"Price Price Price CSC CSC CSC Be-There Be-There Be-There";
+	}
+	.Wrestling-Prediction-League { 
+		text-align: center;
 	}
 }
