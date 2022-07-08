@@ -1,18 +1,23 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+// Grabs the stacked hamburger icon
+const navicon = document.querySelector(".navicon");
 
-hamburger.addEventListener("click", mobileMenu);
+// Grabs the ul list element
+const navMenu = document.querySelector(".navlist");
+
+// Adds the "mobileMenu" function for whenever the stacked hamburger icon is clicked (via the addEventListener)
+navicon.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
-    hamburger.classList.toggle("active");
+    navicon.classList.toggle("active");
     navMenu.classList.toggle("active");
 }
 
-const navLink = document.querySelectorAll(".nav-link");
+/// Grabs the "a" links in the list and closes the menu whenever any of those are clicked
+const navItem = document.querySelectorAll(".navitem");
 
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+navItem.forEach(n => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
-    hamburger.classList.remove("active");
+    navicon.classList.remove("active");
     navMenu.classList.remove("active");
 }
