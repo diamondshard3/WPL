@@ -62,15 +62,14 @@ li {
 li a {
 	color: #5f99e6;
 	font-family: 'Black Ops One', cursive;
-	font-size: 30px;
+	font-size: 2em;
 	text-decoration: none;
-	height: 50px;
-	line-height:50px;
+	line-height:3em;
 }
 
 li a:first-child {
-	padding-left:20px;
-	padding-right:20px;
+	padding-left:1em;
+	padding-right:1em;
 }
 
 .menuicon {
