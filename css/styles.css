@@ -1,444 +1,113 @@
-/*******************/
-/* Main formatting */
-/*******************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
-body {
-	background-color:#000000;
-	color: #ffffff;
-	margin: 0px;
-    padding: 0px;
-	font-family: Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-main {
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-.topline {
-	color: #000000;
-	font-size: 2em;
-}
-
-h1 {
-	text-align:center;
-}
-
-article.parent {
-	display:flex;
-}
-
-section {
-	flex: 1;
-	text-align:center;
-}
-
-.hero1 {
-	width: 100%;
-	height: 300px;
-}
-
-.mainevent {
-	background-color: rgb(31, 109, 212);
-	font-family: 'Anton', sans-serif;
-}
-
-.worldchamp {
-	background-color: darkorange;
-}
-
-.tagteamchamp {
-	background-color: #8D918D;
-}
-
-/* Used for the faux wrestling poster */
-
-.container {  
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas:
-	  "WPL WPL WPL WPL WPL Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League"
-	  "Date Date Date Date Date Date Date Date Date"
-	  "Decoration-1 Decoration-1 WPL-World-Champion WPL-World-Champion WPL-World-Champion WPL-World-Champion WPL-World-Champion Decoration-2 Decoration-2"
-	  "World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name"
-	  "Decoration-3 Decoration-3 Tag-Team-Champions Tag-Team-Champions Tag-Team-Champions Tag-Team-Champions Tag-Team-Champions Decoration-4 Decoration-4"
-	  "Decoration-5 Decoration-5 Tag-Team-Name Tag-Team-Name Tag-Team-Name Tag-Team-Name Tag-Team-Name Decoration-6 Decoration-6"
-	  "Tag-Team-Teammate-1 Tag-Team-Teammate-1 Tag-Team-Teammate-1 Tag-Team-Teammate-1 AND Tag-Team-Teammate-2 Tag-Team-Teammate-2 Tag-Team-Teammate-2 Tag-Team-Teammate-2"
-	  "TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider"
-	  "Decoration-7 Decoration-7 Main-Event-Champion Main-Event-Champion Main-Event-Champion Main-Event-Champion Main-Event-Champion Decoration-8 Decoration-8"
-	  "Decoration-9 Decoration-9 Main-Event-Name Main-Event-Name Main-Event-Name Main-Event-Name Main-Event-Name Decoration-10 Decoration-10"
-	  "TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2"
-	  "Price Price Price CSC CSC CSC Be-There Be-There Be-There";
-	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-	background-color: antiquewhite;
-	color: #271e1f;
-	text-align: center;
-	font-family: 'Anton', sans-serif;
-	width: 55%;
-	margin: auto;
-  }
-  
-.WPL { 
-	grid-area: WPL; 
-	background-color:#271e1f;
-	color: antiquewhite;
-	margin: 10px;
-	font-size: 120pt;
-}
-  
-.Wrestling-Prediction-League { 
-	grid-area: Wrestling-Prediction-League; 
-	text-align: left;
-	font-size: 42pt;
-	font-stretch: expanded;
-	margin: 10px;
-}
-  
-.Date { 
-	grid-area: Date;
-	font-size:50pt;
-	margin: 20px;
-	border-bottom:#271e1f 3px solid;
-}
-  
-.Decoration-1 { 
-	grid-area: Decoration-1;
-	margin: auto; }
-  
-.WPL-World-Champion { 
-	grid-area: WPL-World-Champion; 
-	font-size:38pt;
-}
-  
-.Decoration-2 { 
-	grid-area: Decoration-2;
-	margin: auto; 
-}
-  
-.World-Champ-Name { 
-	grid-area: World-Champ-Name; 
-	font-size:120pt;
-	margin: 20px;
-	border-bottom:#271e1f 3px solid;
-	color: red;
-}
-  
-.Decoration-3 { 
-	grid-area: Decoration-3;
-	margin: auto; }
-  
-.Tag-Team-Champions { 
-	grid-area: Tag-Team-Champions;
-	font-size: 34pt;
- }
-  
-.Decoration-4 { 
-	grid-area: Decoration-4;
-	margin: auto; 
-}
-  
-.Decoration-5 { 
-	grid-area: Decoration-5;
-	margin: auto; 
-}
-  
-.Tag-Team-Name { 
-	grid-area: Tag-Team-Name;
-	margin: auto; 
-	font-size: 20pt;
-}
-  
-.Decoration-6 { 
-	grid-area: Decoration-6;
-	margin: auto; 
-}
-  
-.Tag-Team-Teammate-1 { 
-	grid-area: Tag-Team-Teammate-1;
-	margin: auto;
-	color: red;
-	font-size: 50px;
-}
-  
-.AND { 
-	grid-area: AND;
-	margin: auto;
-	font-size: 24pt; 
-}
-  
-.Tag-Team-Teammate-2 { 
-	grid-area: Tag-Team-Teammate-2;
-	margin: auto;
-	color: red;
-	font-size: 50px; 
-}
-  
-.TTdivider { 
-	grid-area: TTdivider;
-	height:4px;
-	width: 95%;
-	border-bottom:#271e1f 3px solid;
-	margin: auto; 
-}
-
-.Decoration-7 { 
-	grid-area: Decoration-7;
-	margin: auto; 
-}
-  
-.Main-Event-Champion { 
-	grid-area: Main-Event-Champion;
-	margin: auto; 
-	font-size: 34pt;
-}
-  
-.Decoration-8 { 
-	grid-area: Decoration-8;
-	margin: auto; 
-}
-  
-.Decoration-9 { 
-	grid-area: Decoration-9;
-	margin: auto; 
-}
-  
-.Main-Event-Name { 
-	grid-area: Main-Event-Name;
-	margin: auto; 
-	color: red;
-	font-size: 50px; 
-}
-  
-.Decoration-10 { 
-	grid-area: Decoration-10;
-	margin: auto; 
-}
-
-.TTdivider2 { 
-	grid-area: TTdivider2;
-	height:4px;
-	width: 95%;
-	border-bottom:#271e1f 3px solid;
-	margin: auto; 
-}
-
-.Price { 
-	grid-area: Price;
-	margin: auto; 
-}
-
-.CSC { 
-	grid-area: CSC;
-	margin: auto; 
-	font-size: 20pt;
-}
-
-.Be-There { 
-	grid-area: Be-There;
-	margin: auto;	
-	font-size: 16pt;
-}
-
-.wpllink {
-	text-decoration: none;
-	color: #271e1f;
-}
-
-/******************/
-/* Format the nav */
-/******************/
-nav {
-	top:0px;
-	background-color: #000000;
-	overflow: hidden;
-	position:fixed;
-	width:100%;
-	transition: top 0.3s;
-}
-
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	grid-template-columns: auto auto auto auto auto 1fr;
-	grid-template-rows: 50px;
-	display: grid;
-	
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
 }
 
 li {
-	background-color: #000000;
-	display: flex;
+    list-style: none;
 }
 
-li a {
-	flex:1;
-	color: #5f99e6;
-	font-family: 'Black Ops One', cursive;
-	font-size: 30px;
-	text-decoration: none;
-	justify-content: center;
-	align-items: center;
-	height: 50px;
-	line-height:50px;
-	display:block;
-	text-align:center;
+a {
+    text-decoration: none;
 }
 
-li a:first-child {
-	padding-left:20px;
-	padding-right:20px;
+.header{
+    border-bottom: 1px solid #E2E8F0;
 }
 
-.menuicon {
-	display:inline-flex;
-	width: 35px;
-	height: 5px;
-	background-color: #5f99e6;
-	margin: 6px 0;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
 }
 
-a.navicon {
-	display: grid;
+.hamburger {
+    display: none;
 }
 
-.navmenu {
-
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
-
-
-/*********************/
-/* Mobile formatting */
-/*********************/
-
-/* Use this for any screen size 480px and smaller */
-/*
-
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-
-	/***************************************/
-	/* Used for the underlining of the nav */
-	/***************************************/
-
-	li a {
-		position: relative;
-	}
-	
-	li a::before {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 4px;
-		border-radius: 4px;
-		background-color: #5f99e6;
-		bottom: 0;
-		left: 0;
-		transform-origin: right;
-		transform: scaleX(0);
-		transition: transform .3s ease-in-out;
-	}
-	
-	li a:hover::before {
-	transform-origin: left;
-	transform: scaleX(1);
-	}
-
-	.navmenu {
-		display: none;
-	}
-
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-	/* body {
-		background-color: red;
-	} */
-	.navdesktop {
-		display: none;
-	}
-	
-	.WPL { 
-		grid-area: WPL; 
-		background-color:#271e1f;
-		color: antiquewhite;
-		margin: 10px;
-		font-size: 90pt;
-	}
-	  
-	.Wrestling-Prediction-League { 
-		grid-area: Wrestling-Prediction-League; 
-		text-align: left;
-		font-size: 32pt;
-		font-stretch: expanded;
-		margin: 10px;
-	}
-
+.nav-item {
+    margin-left: 5rem;
 }
 
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-	/* body {
-		background-color: blue;
-	} */
-	.navdesktop {
-		display: none;
-	}
-	.container { 
-		grid-template-areas:
-		"WPL WPL WPL WPL WPL WPL WPL WPL WPL"
-		"Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League"
-		"Date Date Date Date Date Date Date Date Date"
-		"Decoration-1 Decoration-1 WPL-World-Champion WPL-World-Champion WPL-World-Champion WPL-World-Champion WPL-World-Champion Decoration-2 Decoration-2"
-		"World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name"
-		"Decoration-3 Decoration-3 Tag-Team-Champions Tag-Team-Champions Tag-Team-Champions Tag-Team-Champions Tag-Team-Champions Decoration-4 Decoration-4"
-		"Decoration-5 Decoration-5 Tag-Team-Name Tag-Team-Name Tag-Team-Name Tag-Team-Name Tag-Team-Name Decoration-6 Decoration-6"
-		"Tag-Team-Teammate-1 Tag-Team-Teammate-1 Tag-Team-Teammate-1 Tag-Team-Teammate-1 AND Tag-Team-Teammate-2 Tag-Team-Teammate-2 Tag-Team-Teammate-2 Tag-Team-Teammate-2"
-		"TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider"
-		"Decoration-7 Decoration-7 Main-Event-Champion Main-Event-Champion Main-Event-Champion Main-Event-Champion Main-Event-Champion Decoration-8 Decoration-8"
-		"Decoration-9 Decoration-9 Main-Event-Name Main-Event-Name Main-Event-Name Main-Event-Name Main-Event-Name Decoration-10 Decoration-10"
-		"TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2"
-		"Price Price Price CSC CSC CSC Be-There Be-There Be-There";
-	}
-	.Wrestling-Prediction-League { 
-		text-align: center;
-	}
-
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
 }
 
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
-	/* body {
-		background-color: green;
-	} */
-	article.parent {
-		display:block;
-	}
-	.navdesktop {
-		display: none;
-	}
-	.container { 
-		grid-template-areas:
-		"WPL WPL WPL WPL WPL WPL WPL WPL WPL"
-		"Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League Wrestling-Prediction-League"
-		"Date Date Date Date Date Date Date Date Date"
-		"Decoration-1 Decoration-1 WPL-World-Champion WPL-World-Champion WPL-World-Champion WPL-World-Champion WPL-World-Champion Decoration-2 Decoration-2"
-		"World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name World-Champ-Name"
-		"Decoration-3 Decoration-3 Tag-Team-Champions Tag-Team-Champions Tag-Team-Champions Tag-Team-Champions Tag-Team-Champions Decoration-4 Decoration-4"
-		"Decoration-5 Decoration-5 Tag-Team-Name Tag-Team-Name Tag-Team-Name Tag-Team-Name Tag-Team-Name Decoration-6 Decoration-6"
-		"Tag-Team-Teammate-1 Tag-Team-Teammate-1 Tag-Team-Teammate-1 Tag-Team-Teammate-1 AND Tag-Team-Teammate-2 Tag-Team-Teammate-2 Tag-Team-Teammate-2 Tag-Team-Teammate-2"
-		"TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider TTdivider"
-		"Decoration-7 Decoration-7 Main-Event-Champion Main-Event-Champion Main-Event-Champion Main-Event-Champion Main-Event-Champion Decoration-8 Decoration-8"
-		"Decoration-9 Decoration-9 Main-Event-Name Main-Event-Name Main-Event-Name Main-Event-Name Main-Event-Name Decoration-10 Decoration-10"
-		"TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2 TTdivider2"
-		"Price Price Price CSC CSC CSC Be-There Be-There Be-There";
-	}
-	.Wrestling-Prediction-League { 
-		text-align: center;
-	}
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
 }
