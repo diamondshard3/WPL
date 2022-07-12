@@ -11,7 +11,7 @@ body {
 }
 
 main {
-	padding-top: 6em;
+	padding-top: 8em;
 	padding-bottom: 6em;
 }
 
@@ -45,6 +45,7 @@ section {
 	transition: top 0.3s;
 	display:flex;
 	justify-content: left;
+	align-items: center;
 }
 
 .navlist {
@@ -303,11 +304,9 @@ li a:first-child {
 /* Mobile formatting */
 /*********************/
 
-/* Use this for any screen size 480px and smaller */
-/*
 
 /********** Large devices only **********/
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
 
 	/***************************************/
 	/* Used for the underlining of the nav */
@@ -343,7 +342,7 @@ li a:first-child {
 }
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1349px) {
 	/* body {
 		background-color: red;
 	} */
@@ -368,7 +367,7 @@ li a:first-child {
 	.navlist {
 		position: fixed;
         left: -100%;
-        top: 50px;
+        top: 8em;
         flex-direction: column;
         width: 100%;
         border-radius: 10px;
@@ -411,7 +410,7 @@ li a:first-child {
 	.navlist {
 		position: fixed;
         left: -100%;
-        top: 50px;
+        top: 8em;
         flex-direction: column;
         width: 100%;
         border-radius: 10px;
@@ -457,7 +456,7 @@ li a:first-child {
 	.navlist {
 		position: fixed;
         left: -100%;
-        top: 50px;
+        top: 8em;
         flex-direction: column;
         width: 100%;
         border-radius: 10px;
